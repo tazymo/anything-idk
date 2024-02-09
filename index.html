@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe Photography</title>
+    <title>Tech Insight Blog</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(to bottom right, #000000, #ffffff);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: white;
         }
 
         header {
-            background-color: #333;
-            color: white;
+            background: linear-gradient(to bottom right, #000000, #ffffff);
             text-align: center;
             padding: 1em;
+            flex: 1;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Less visible border for header */
         }
 
         nav {
             display: flex;
             justify-content: center;
-            background-color: #444;
+            background: linear-gradient(to bottom right, #000000, #ffffff);
             padding: 0.5em;
+            border: none; /* Remove border */
+            flex: 1;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Less visible border for navigation */
         }
 
         nav a {
@@ -43,69 +51,89 @@
             max-width: 800px;
             margin: auto;
             padding: 20px;
+            flex: 6;
+            background: linear-gradient(to bottom right, #000000, #ffffff);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .gallery img {
-            width: 100%;
+        article {
+            background-color: white;
             border-radius: 8px;
-            transition: transform 0.3s ease-in-out;
+            padding: 20px;
+            margin-bottom: 20px;
         }
 
-        .gallery img:hover {
-            transform: scale(1.1);
+        article h2 {
+            color: #333;
         }
 
         footer {
             text-align: center;
             padding: 1em;
-            background-color: #333;
-            color: white;
+            background: linear-gradient(to bottom right, #000000, #ffffff);
+            flex: 1;
+            border-top: 1px solid rgba(255, 255, 255, 0.2); /* Less visible border for footer */
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>John Doe Photography</h1>
-        <p>Capturing Moments, Creating Memories</p>
+        <h1>Tech Insight Blog</h1>
+        <p>Stay Updated with the Latest Technology Trends</p>
     </header>
 
     <nav>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+        <a href="#latest">Latest</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#tutorials">Tutorials</a>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my photography portfolio! I am John Doe, a passionate photographer dedicated to capturing the beauty of life through my lens.</p>
+    <section id="latest">
+        <article>
+            <h2>Exploring the Future of Artificial Intelligence</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum blandit elit, in tempus elit aliquam id...</p>
+            <p>Published on: February 9, 2024</p>
+        </article>
+
+        <article>
+            <h2>The Rise of 5G Technology: What to Expect</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum blandit elit, in tempus elit aliquam id...</p>
+            <p>Published on: February 7, 2024</p>
+        </article>
     </section>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="gallery">
-            <img src="image1.jpg" alt="Photo 1">
-            <img src="image2.jpg" alt="Photo 2">
-            <img src="image3.jpg" alt="Photo 3">
-            <!-- Add more images as needed -->
-        </div>
+    <section id="reviews">
+        <article>
+            <h2>Review: Latest Smartphones of 2024</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum blandit elit, in tempus elit aliquam id...</p>
+            <p>Published on: February 5, 2024</p>
+        </article>
+
+        <article>
+            <h2>Gaming Laptop Showdown: Top Picks for 2024</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum blandit elit, in tempus elit aliquam id...</p>
+            <p>Published on: February 3, 2024</p>
+        </article>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Interested in my work? Feel free to reach out!</p>
-        <p>Email: john.doe@example.com</p>
-        <p>Phone: (123) 456-7890</p>
+    <section id="tutorials">
+        <article>
+            <h2>Getting Started with Web Development: A Beginner's Guide</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum blandit elit, in tempus elit aliquam id...</p>
+            <p>Published on: February 1, 2024</p>
+        </article>
+
+        <article>
+            <h2>Building Your First Mobile App: Step-by-Step Tutorial</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum blandit elit, in tempus elit aliquam id...</p>
+            <p>Published on: January 30, 2024</p>
+        </article>
     </section>
 
     <footer>
-        <p>&copy; 2024 John Doe Photography. All rights reserved.</p>
+        <p>&copy; 2024 Tech Insight Blog. All rights reserved.</p>
     </footer>
 
 </body>
